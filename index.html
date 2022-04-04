@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <section class="logo">
+    <a href="/" class="logo__img">
+        <img src="./assets/img/svg/logo.svg" alt="">
+    </a>
+    <a href="/" class="logo__title">
+        <span>магазин инструмента</span>
+    </a>
+</section>
+
+            <button class="header__burger js-header__burger">
+                <span></span>
+            </button>
+
+            <div class="header__top-right js-header__top-right">
+                <div class="header__row header__row_top">
+                    <nav class="top-nav js-nav" data-linkText="Ешё..." data-linkTextAll="Меню" data-undo="true">
+    <ul class="top-nav__list top-nav__list_first navmenu">
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>Каталог инструментов</span></a></li>
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>Все для сада</span></a></li>
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>Ручной интрумент</span></a></li>
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>Электрика</span></a></li>
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>Доставка</span></a></li>
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>Оплата</span></a></li>
+        <li class="top-nav__item"><a href="/" class="top-nav__link"><span>О нас</span></a></li>
+    </ul>
+</nav>
+
+                    <nav class="top-nav top-nav_auth">
+    <ul class="top-nav__list">
+        <li class="top-nav__item">
+            <a href="/" class="top-nav__link top-nav__link_first">
+                <span>Вход</span>
+            </a>
+        </li>
+        <li class="top-nav__item">
+            <a href="/" class="top-nav__link">
+                <span>Регистрация</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+                </div>
+                <div class="header__row header__row_bottom">
+                    <div class="header__fragmet"></div>
+                    
+                    <section class="product">
+    <div class="product__d-flex">
+        <ul class="product__link">
+            <li class="product__link-item">
+                <a href="">
+                    <img src="./assets/img/svg/icon_1.svg" alt="">
+                    <span>3 шт. / 17 250 р.</span>
+                </a>
+            </li>
+            <li class="product__link-item">
+                <a href="">
+                    <img src="./assets/img/svg/icon_2.svg" alt="">
+                    <span>Избранное (7)</span>
+                </a>
+            </li>
+            <li class="product__link-item">
+                <a href="">
+                    <img src="./assets/img/svg/icon_3.svg" alt="">
+                    <span>К сравнению (5)</span>
+                </a>
+            </li>
+        </ul>
+        <div class="product__images">
+            <div class="product__img">
+                <a href="">
+                    <picture>
+                        <img src="./assets/img/content/p_1.png" alt="" loading="lazy">
+                    </picture>
+                </a>
+            </div>
+            <div class="product__img">
+                <a href="">
+                    <picture>
+                        <img src="./assets/img/content/p_2.png" alt="" loading="lazy">
+                    </picture>
+                </a>
+            </div>
+            <div class="product__img">
+               <a href="">
+                    <picture>
+                        <img src="./assets/img/content/p_3.png" alt="" loading="lazy">
+                    </picture>
+               </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+                    <section class="contacts">
+    <div class="contacts__row">
+        <p class="contacts__text"><strong>Время работы:</strong></p>
+        <time datetime="10:00 — 19:00" class="contacts__text">10:00 — 19:00</time>
+    </div>
+    <div class="contacts__tel">
+        <a href="tel:84957212525">8 495 721-25-25</a>
+    </div>
+    <div class="contacts__row">
+        <p class="contacts__text js-select-text">Москва</p>
+        <div class="contacts__select">
+            <div class="contacts__select-placeholder contacts__text js-select-placeholder">
+                <img src="./assets/img/svg/arrow.svg" alt="">
+                <span>сменить</span>
+            </div>
+            <div class="contacts__select-dropdown">
+                <ul class="contacts__select-list">
+                    <li class="contacts__select-item contacts__text js-select-item" data-value="Москва"><span>Москва</span></li>
+                    <li class="contacts__select-item contacts__text js-select-item" data-value="Екатеринбург"><span>Екатеринбург</span></li>
+                    <li class="contacts__select-item contacts__text js-select-item" data-value="Санкт-Петербург "><span>Санкт-Петербург</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+                </div>
+            </div>
+        </div>
+        <section class="menu">
+    <div class="menu__inner">
+        <form class="menu__search js-search">
+            <label for="search" class="menu__search-wrap">
+                <button type="submit" class="menu__search-btn">
+                    <svg>
+                        <use xlink:href="./assets/img/sprites/sprite.svg#glass"></use>
+                    </svg>
+                </button>
+                <input type="text" class="menu__search-input js-search-input" id="search" name="search">
+            </label>
+        </form>
+        <nav class="menu__nav js-nav" data-linkText="Ешё..." data-linkTextAll="Меню">
+            <ul class="menu__list navmenu">
+                <li class="menu__list-item active"><a href="/">Перфораторы</a></li>
+                <li class="menu__list-item"><a href="/">Дрели</a></li>
+                <li class="menu__list-item"><a href="/">Шлифмашины</a></li>
+                <li class="menu__list-item"><a href="/">Пистолеты</a></li>
+                <li class="menu__list-item"><a href="/">Электропилы</a></li>
+                <li class="menu__list-item"><a href="/">Наборы инструментов</a></li>
+                <li class="menu__list-item"><a href="/">Акксесуары</a></li>
+            </ul> 
+        </nav>
+        <a href="" class="menu__link">Распродажа</a>
+    </div>
+</section>
+    </div>
+</header>
+    
+    <footer class="footer">
+    <div class="container"></div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./assets/libs/flexmenu/modernizr.custom.js"></script>
+<script type="text/javascript" src="./assets/libs/flexmenu/flexmenu.min.js"></script>
+
+<script src="./assets/js/app.min.js"></script>
+</body>
+</html>
