@@ -1,0 +1,60 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $accent_font;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus {
+    outline-style: none;
+    outline-width: 0 !important;
+    outline-color: none !important;
+}
+
+input,
+button,
+textarea,
+fieldset {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @include below(1200px) {
+        padding: 0 25px;
+    }
+
+    @include below(768px) {
+        max-width: 320px;
+        padding: 0;
+    }
+}
